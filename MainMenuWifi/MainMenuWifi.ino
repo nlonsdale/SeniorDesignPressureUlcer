@@ -8,7 +8,8 @@
 #include <SPI.h>
 
 float sample[9]={0};
-String apiKey = "MTSDQ3QK31ETOQTD";
+//Your ThingSpeak API key
+String apiKey = "";
 
 SoftwareSerial BTserial(2,3); //RX-TX
 //SoftwareSerial ser(4,5); // RX, TX
