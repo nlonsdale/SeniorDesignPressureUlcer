@@ -1,0 +1,22 @@
+Programming ESP8266 using an Arduino
+
+Connect....
+-------------------------
+ESP8266      ||  Arduino
+-------------------------
+Tx           -->   Tx
+Rx           -->   Rx
+Ground       --> Ground
+VCC & CH_PD  -->  3.3V
+-------------------------
+
+1. Upload a blank sketch to the Arduino
+2. Open up the Serial Monitor in the Arduino IDE
+3. Make sure line ending is set to "Both NL+CR"
+4. Check the Baud Rate and set it to the Baud rate of the ESP8266
+   (usually at 115200)
+5. To see if ESP8266 is responding type "AT" and the monitor should
+display "OK" -Note commands are case sensitive
+6. To see available WIFI networks use the command AT+CWLAP
+7. To connect to a WIFI network use the command AT+CWJAP="WIFI name",
+"WIFI password" once completed the monitor will display "WIFI CONNECTED"
